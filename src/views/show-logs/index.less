@@ -1,0 +1,36 @@
+.show-logs {
+  height: 90% !important;
+  padding-bottom: 20px !important;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #E9ECF0;
+
+    .title {
+      width: 80px;
+      text-align: right;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: calc(100% - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .log-category {
+      width: 300px;
+      height: 100%;
+    }
+
+    .log-info {
+      flex: 1;
+      height: 100%;
+    }
+  }
+}

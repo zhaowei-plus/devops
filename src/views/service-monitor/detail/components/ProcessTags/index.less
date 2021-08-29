@@ -1,0 +1,80 @@
+.process-tags {
+  border-radius: 4px;
+  min-height: 180px;
+  max-height: 260px;
+  padding: 6px;
+  overflow: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+
+  &:before,
+  &:after {
+    position: relative;
+    content: '➤';
+    font-size: 42px;
+    height: 48px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    color: rgb(72, 143, 249);
+  }
+
+  // TODO 注意 first-of-type nth-of-type last-of-type选择器的匹配问题
+  &:nth-of-type(2) {
+    border: 1px solid rgb(228, 231, 237);
+    min-height: 80px;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  &:first-of-type {
+    border: 1px solid rgb(228, 231, 237);
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  &:last-of-type {
+    border: 1px solid rgb(228, 231, 237);
+    min-height: 80px;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+
+    .tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(24, 144, 255);
+      border-radius: 4px;
+      padding: 6px 10px;
+      margin: 8px;
+      cursor: pointer;
+
+      &:empty {
+        &:after {
+          content: '无';
+        }
+      }
+    }
+  }
+}

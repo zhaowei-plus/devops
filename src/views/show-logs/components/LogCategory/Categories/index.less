@@ -1,0 +1,127 @@
+.categories {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .ant-spin-nested-loading {
+    width: 100%;
+  }
+
+  &__header {
+    width: 100%;
+    padding: 0 8px;
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__content {
+    width: 100%;
+    overflow: auto;
+    flex: 1;
+    padding-bottom: 32px;
+
+    &.list {
+      &:empty {
+        &:after {
+          width: 100%;
+          height: 80px;
+          content: '暂无数据';
+          font-size: 14px;
+          opacity: .6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .category {
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 0 4px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 14px;
+
+        &.active {
+          background: #e3eaf3;
+          color:#262a30;
+        }
+
+        &:hover {
+          background: #e3eaf3;
+          .download{
+            display: inline-block;
+          }
+        }
+
+        &__icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            color: #517ED0;
+          }
+        }
+
+        &__info {
+          margin: 0 4px;
+        }
+
+        &__operation {
+          height: 24px;
+          width: 24px;
+          align-items: center;
+          justify-content: center;
+          display: none;
+          color: #517ED0;
+          font-size: 16px;
+        }
+
+        &:hover {
+          .category__operation {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    background-color: #ffffff;
+
+    .load-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+      color: #517ED0;
+
+      span {
+        margin: 0 4px;
+      }
+    }
+  }
+}

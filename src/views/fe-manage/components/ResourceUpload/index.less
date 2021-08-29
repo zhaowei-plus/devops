@@ -1,0 +1,57 @@
+.resource-upload {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  &__header {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 4px;
+  }
+
+  &__content {
+    width: 100%;
+    flex: 1;
+  }
+
+  .package {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &__header {
+      width: 100%;
+      height: 39px;
+      line-height: 39px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    &__content {
+      width: 100%;
+      //border: 1px solid red;
+      padding: 4px;
+
+      .check-all {
+        width: 100%;
+        height: 39px;
+        line-height: 39px;
+      }
+
+      .check-list {
+        width: 100%;
+        .ant-checkbox-group-item {
+          display: flex;
+          margin: 4px 0;
+        }
+      }
+    }
+  }
+}

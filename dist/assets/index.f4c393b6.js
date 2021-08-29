@@ -1,0 +1,1 @@
+var o=Object.prototype.hasOwnProperty,e=function e(n,r){var t=[];for(var p in n)if(o.call(n,p)){var a,c=n[p],f=encodeURIComponent(p);a="object"==typeof c?e(c,r?r+"["+f+"]":f):(r?r+"["+f+"]":f)+"="+encodeURIComponent(c),t.push(a)}return t.join("&")};export{e as _};

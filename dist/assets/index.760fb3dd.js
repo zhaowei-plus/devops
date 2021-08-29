@@ -1,0 +1,1 @@
+import{_ as e}from"./vendor.931d8f24.js";import"./index.54d80d25.js";const r=r=>{const{page:o}=r;return e.createElement("div",{className:"operation-report-frame"},e.createElement("iframe",{frameBorder:"0",width:"100%",height:"100%",src:`${window.location.origin}${o}`}))};export{r as O};

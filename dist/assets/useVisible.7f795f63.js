@@ -1,0 +1,1 @@
+import{_ as e}from"./vendor.931d8f24.js";var a=(a=!1)=>{const[s,o]=e.useState(),[r,t]=e.useState(a);return{params:s,visible:r,open:e.useCallback((e=>{o(e),t(!0)}),[]),close:e.useCallback((()=>{t(!1),o(void 0)}),[])}};export{a as u};

@@ -1,0 +1,40 @@
+.service-monitor-detail {
+  overflow: auto;
+  .breadcrumb {
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+
+    &__item {
+      padding: 0 8px;
+      position: relative;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+
+      &:hover {
+        color: #517ED0;
+      }
+
+      &:not(:first-of-type) {
+        &:before {
+          position: absolute;
+          content: '/';
+          left: -4px;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 8px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

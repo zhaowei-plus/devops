@@ -1,0 +1,1 @@
+import{_ as d}from"./vendor.931d8f24.js";import"./index.54d80d25.js";import"./index.d0ed3dc5.js";import{O as e}from"./index.760fb3dd.js";export default()=>d.createElement(e,{title:"Redis",page:"/grafana/dashboard/db/redis?orgId=1&kiosk=tv"});

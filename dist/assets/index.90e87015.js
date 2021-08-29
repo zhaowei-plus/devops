@@ -1,0 +1,1 @@
+import{_ as e}from"./vendor.931d8f24.js";import{R as t}from"./index.54d80d25.js";var r=r=>{const{title:l=[],value:i=[]}=r;return e.createElement(t,{splitView:!0,oldValue:i[0],newValue:i[1],leftTitle:l[0],rightTitle:l[1]})};export{r as C};
